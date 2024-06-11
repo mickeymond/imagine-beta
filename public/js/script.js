@@ -101,3 +101,40 @@ const middlename = '';
 firstname + ' ' + middlename + ' ' + lastname;
 // Template literal
 `${firstname} ${middlename} ${lastname}`;
+
+// Write a function that will add a participant to our Google Classroom
+const participants = [];
+function addParticipant(email) {
+    // Check if email was provided
+    if (!email) {
+        return 'No email provided';
+    }
+    // Check if email is valid
+    if (!email.includes('@gmail.com')) {
+        return 'Invalid email provided';
+    }
+    // Add email to participants
+    participants.push(email);
+    return 'Participant added';
+}
+
+addParticipant('mickeymond@gmail.com');
+addParticipant('mickeymond@outlook.com');
+addParticipant();
+addParticipant('mickeymond');
+participants;
+
+// Arrays in JavaScript
+const users = [
+    {
+        username: 'mickeymond',
+        password: '1234',
+        email: 'mickeymond@yahoo.com'
+    },
+    {
+        username: 'mickeymond201',
+        password: '12345',
+        email: 'mickeymond@outlook.com'
+    }
+];
+users;
