@@ -65,30 +65,39 @@ for (let i = 0; i < bottles.length; i++) {
 function login(username, password) {
     // Validate username and password
     if (!username || !password) {
-      return 'Username or password not provided';
+        return 'Username or password not provided';
     }
     // Verify username and password
     if (username == 'mickeymond' && password == '1234') {
-      return 'User is logged in';
+        return 'User is logged in';
     } else {
-      return 'Invalid username or password';
+        return 'Invalid username or password';
     }
-  }
-  // Invoking a function
-  login('mickeymond');
-  
-  
-  // Basic Arithmetic Operations
-  11 + 12;
-  1 + 0.5;
-  43 - 12;
-  45 / 7;
-  5 * 3;
-  14 % 3;
-  
-  Math.floor(45 / 24);
-  45 % 24
-  Math.random() * 1000;
-  Math.max(34,32,37);
-  2 * (3 + 4) - 5 / 2;
-  Number('ty') + 2
+}
+// Invoking a function
+login('mickeymond');
+
+
+// Basic Arithmetic Operations
+11 + 12;
+1 + 0.5;
+43 - 12;
+45 / 7;
+5 * 3;
+14 % 3;
+
+Math.floor(45 / 24);
+45 % 24
+Math.random() * 1000;
+Math.max(34, 32, 37);
+2 * (3 + 4) - 5 / 2;
+Number('ty') + 2
+
+// Strings in JavaScript
+// Concatenation
+const firstname = 'Michael';
+const lastname = 'Hammond';
+const middlename = '';
+firstname + ' ' + middlename + ' ' + lastname;
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
